@@ -1,0 +1,6 @@
+<p>
+  mission-list works!
+</p>
+<div *ngFor="let m of missions">
+  <strong>{{m.title}}</strong><app-switch [id]="m.id" [checked]="m.finished" (checkedChange)="onSwitched($event)"></app-switch>
+</div>
